@@ -1,0 +1,23 @@
+# Tauri / Rust build artifacts
+/src-tauri/target/
+
+# Binarios locales empaquetados (las releases van a GitHub Releases)
+/instaladores/
+*.exe
+*.dmg
+*.app
+*.deb
+*.AppImage
+
+# Certificados y firmas privadas
+/firma/
+*.pfx
+*.p12
+*.cer
+*.key
+*.pem
+
+# Sistema y logs
+.DS_Store
+Thumbs.db
+*.log

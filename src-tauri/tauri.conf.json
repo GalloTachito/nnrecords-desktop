@@ -1,0 +1,51 @@
+{
+  "$schema": "https://raw.githubusercontent.com/nicklaswa/tauri-v2-schema/main/schema.json",
+  "productName": "NN Records",
+  "version": "1.0.0",
+  "identifier": "app.nnrecords.desktop",
+  "build": {
+    "frontendDist": "https://nnrecords.app"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "NN Records",
+        "width": 1280,
+        "height": 800,
+        "minWidth": 1024,
+        "minHeight": 768,
+        "resizable": true,
+        "fullscreen": false,
+        "userAgent": "NNRecords-Desktop/1.0"
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis", "dmg"],
+    "category": "Music",
+    "copyright": "Copyright © 2026 NN Records",
+    "shortDescription": "NN Records - Música libre de copyright",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "nsis": {
+        "displayLanguageSelector": false,
+        "installMode": "currentUser",
+        "languages": ["Spanish"]
+      }
+    },
+    "macOS": {
+      "minimumSystemVersion": "10.15",
+      "frameworks": []
+    }
+  }
+}
