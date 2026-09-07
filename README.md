@@ -81,7 +81,7 @@ Para generar los instaladores de Windows (`.exe`) y macOS (`.dmg`) y publicarlos
 
 ## 🛡️ Guía de Instalación para Usuarios (Avisos de Seguridad)
 
-Al tratarse de una versión comunitaria de código abierto sin certificados comerciales de pago (EV/Apple Developer ID de $99–$400/año), los sistemas operativos muestran avisos de advertencia en las primeras descargas:
+Los sistemas operativos muestran avisos de advertencia en las primeras descargas:
 
 ### En Windows (SmartScreen)
 1. Al ejecutar el instalador `.exe`, aparecerá la pantalla azul: *"Windows protegió su PC / Editor desconocido"*.
