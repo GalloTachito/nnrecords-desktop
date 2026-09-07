@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "identifier": "app.nnrecords.desktop",
   "build": {
+    "devUrl": "https://nnrecords.app",
     "frontendDist": "https://nnrecords.app"
   },
   "app": {
@@ -11,10 +12,11 @@
       {
         "label": "main",
         "title": "NN Records",
-        "width": 1280,
+        "url": "https://nnrecords.app",
+        "width": 1440,
         "height": 800,
-        "minWidth": 1024,
-        "minHeight": 768,
+        "minWidth": 1440,
+        "minHeight": 800,
         "resizable": true,
         "fullscreen": false,
         "userAgent": "NNRecords-Desktop/1.0"
@@ -26,7 +28,10 @@
   },
   "bundle": {
     "active": true,
-    "targets": ["nsis", "dmg"],
+    "targets": [
+      "nsis",
+      "dmg"
+    ],
     "category": "Music",
     "copyright": "Copyright © 2026 NN Records",
     "shortDescription": "NN Records - Música libre de copyright",
@@ -34,13 +39,16 @@
       "icons/32x32.png",
       "icons/128x128.png",
       "icons/128x128@2x.png",
+      "icons/icon.icns",
       "icons/icon.ico"
     ],
     "windows": {
       "nsis": {
         "displayLanguageSelector": false,
         "installMode": "currentUser",
-        "languages": ["Spanish"]
+        "languages": [
+          "Spanish"
+        ]
       }
     },
     "macOS": {

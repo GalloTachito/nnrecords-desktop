@@ -1,5 +1,7 @@
 # Tauri / Rust build artifacts
 /src-tauri/target/
+**/target/
+**/*.rs.bk
 
 # Binarios locales empaquetados (las releases van a GitHub Releases)
 /instaladores/
@@ -8,6 +10,7 @@
 *.app
 *.deb
 *.AppImage
+*.msi
 
 # Certificados y firmas privadas
 /firma/
@@ -16,8 +19,22 @@
 *.cer
 *.key
 *.pem
+.env
+.env.*
+!.env.example
 
 # Sistema y logs
 .DS_Store
 Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
 *.log
+
+# IDEs y editores
+.vscode/
+.idea/
+
+# Skills y herramientas de IA
+.agents/
+.claude/
+skills-lock.json
